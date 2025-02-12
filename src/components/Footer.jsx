@@ -11,7 +11,7 @@ const Footer = () => {
           <img className="w-[60%]" src="/public/LingoLink_Logo.png" alt="" />
         </div>
       </a>
-      <nav>
+      {/* <nav>
         <div className="flex gap-4">
           <a>
             <FaLinkedin className="w-6 h-6" />
@@ -39,7 +39,7 @@ const Footer = () => {
             </svg>
           </a>
         </div>
-      </nav>
+      </nav> */}
       <aside>
         <p>
           Copyright © {new Date().getFullYear()} - All right reserved by{" "}
