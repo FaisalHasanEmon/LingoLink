@@ -28,7 +28,7 @@ const MyBookedTutors = () => {
   return (
     <div>
       <div>
-        <p className="font-bold">
+        <p className="font-bold mb-5">
           You've Booked : {myBookings?.length ? myBookings.length : 0}
           Tutorials
         </p>
