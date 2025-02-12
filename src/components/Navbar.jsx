@@ -79,7 +79,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="text-white navbar bg-base-100 font-protestRiot fixed top-0 z-50 border-b-2 border-white shadow-md shadow-orange-100">
+    <div className="text-white navbar bg-base-100 font-protestRiot fixed top-0 z-50 border-b-2 border-white shadow-md shadow-orange-200">
       <div className="flex-1 ">
         <Link
           to="/"
