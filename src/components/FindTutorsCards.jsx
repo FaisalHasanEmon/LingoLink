@@ -7,11 +7,16 @@ import { IoLanguage } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import UseAuth from "../context/UseAuth";
 
 const FindTutorsCards = ({ tutor, cameFrom = "nowhere", handleDelete }) => {
   const { _id, name, email, image, language, price, description, review } =
     tutor;
 
+  const { notifySuccess } = UseAuth();
+  const handleReview = () => {
+    notifySuccess("Review Added");
+  };
   // Aos animation
   useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -100,7 +105,10 @@ const FindTutorsCards = ({ tutor, cameFrom = "nowhere", handleDelete }) => {
                 </button>
               </Link>
               <Link>
-                <button className="btn  text-white hover:bg-green-500">
+                <button
+                  onClick={handleReview}
+                  className="btn  text-white hover:bg-green-500"
+                >
                   Review
                 </button>
               </Link>
