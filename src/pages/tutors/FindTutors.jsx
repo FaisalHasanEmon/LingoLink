@@ -9,7 +9,7 @@ const FindTutors = () => {
   const { loading, setLoading } = UseAuth();
   const [tutors, setTutors] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
-  const [itemsPerPage, setItemsPerPage] = useState(9);
+  const [itemsPerPage, setItemsPerPage] = useState(12);
   const [count, setCount] = useState(0);
   const [search, setSearch] = useState("");
 
