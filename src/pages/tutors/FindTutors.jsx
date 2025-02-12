@@ -64,7 +64,7 @@ const FindTutors = () => {
           <label className="input input-bordered flex items-center">
             <input
               type="text"
-              className="grow"
+              className="grow text-black"
               name="searchKey"
               placeholder="Search Language"
             />

@@ -58,7 +58,6 @@ const Navbar = () => {
         </>
       ) : (
         <>
-          {" "}
           <li>
             <NavLink
               className="text-white   hover:bg-green-500   bg-orange-500 font-bold"
@@ -80,19 +79,19 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100 font-protestRiot fixed top-0 z-50 border-b-2 border-white shadow-md shadow-orange-200">
+    <div className="text-white navbar bg-base-100 font-protestRiot fixed top-0 z-50 border-b-2 border-white shadow-md shadow-orange-200">
       <div className="flex-1 ">
         <Link
           to="/"
-          className="btn btn-ghost text-xl flex justify-center items-center  "
+          className="btn btn-ghost text-xl flex justify-center items-center"
         >
           <img className="md:h-12 w-[170px] md:w-full" src={logo} alt="Logo" />
         </Link>
       </div>
       <div className="flex-none gap-2">
         <div>
-          <li>
-            <label className="swap swap-rotate h-9 w-9  *:text-black lg:hidden">
+          <li className="flex justify-center items-end">
+            <label className="swap swap-rotate h-6 w-6 md:h-9 md:w-9  *:text-black lg:hidden">
               {/* this hidden checkbox controls the state */}
               <input type="checkbox" onClick={() => setTheme(!theme)} />
 
@@ -146,13 +145,12 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 space-x-2">
+          <ul className="menu menu-horizontal px-1 space-x-2 ">
             {tabs}
-            <li>
-              <label className="swap swap-rotate h-9 w-9  *:text-black">
+            <li className="flex justify-center items-end">
+              <label className="swap swap-rotate h-6 w-6 md:h-9 md:w-9  *:text-black">
                 {/* this hidden checkbox controls the state */}
                 <input type="checkbox" onClick={() => setTheme(!theme)} />
-
                 {/* sun icon */}
                 <svg
                   className="swap-on h-9 w-9 fill-current"
