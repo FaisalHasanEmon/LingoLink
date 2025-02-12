@@ -89,7 +89,7 @@ const FindTutors = () => {
           </button>
         </form>
       </div>
-      <div className="grid gird-cols-1 md:grid-cols-3 gap-12">
+      <div className="grid gird-cols-1 md:grid-cols-3 lg:grid-cols-4 lg:gap-8 gap-12">
         {tutors?.map((tutor) => (
           <FindTutorsCards key={tutor._id} tutor={tutor}></FindTutorsCards>
         ))}
